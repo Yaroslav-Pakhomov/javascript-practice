@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="./js.ico"/>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<h1>Манипулирование элементами</h1>
+
+<br/>
+<br/>
+
+<h3>Создание и вставка элементов</h3>
+<div id="block_create_insert_elems">
+    <p class="paragraph_create_insert_elems">1</p>
+    <p class="paragraph_create_insert_elems">2</p>
+    <p class="paragraph_create_insert_elems">3</p>
+</div>
+
+<br/>
+<br/>
+
+<ol id="ol_create_insert_elems"></ol>
+
+<br/>
+<br/>
+
+<button id="button_create_insert_elems">Добавить пункт</button>
+<ul id="ul_create_insert_elems"></ul>
+
+<br/>
+<br/>
+
+<h3>Навешивание событий при вставке. Привязывание событий при вставке элементов</h3>
+
+<div id="block_binding_events_insert">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+</div>
+
+<br/>
+<br/>
+
+<button id="button_binding_events_insert">Добавить пункт</button>
+<ol id="ol_binding_events_insert"></ol>
+
+<br/>
+<br/>
+<br/>
+
+
+<h3>Создание элементов в цикле</h3>
+<div id="block_circle_create_elem"></div>
+
+<br/>
+<br/>
+
+<ul id="ul_circle_create_elem"></ul>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Навешивание обработчиков в цикле</h3>
+<div id="block_circle_hanging_events"></div>
+
+<br/>
+<br/>
+<br/>
+
+<div id="block_input_circle_hanging_events"></div>
+<p id="paragraph_input_circle_hanging_events"></p>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Удаление элементов</h3>
+<p class="paragraph_remove">elem 1</p>
+<p class="paragraph_remove">elem 2</p>
+<p class="paragraph_remove">elem 3</p>
+<p class="paragraph_remove">elem 4</p>
+<p class="paragraph_remove">elem 5</p>
+
+<br/>
+<br/>
+
+<ul id="ul_remove_elem">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<br/>
+<br/>
+
+<input type="submit" id="button_ul_parent_remove_elem" value="Удалить последний элемент">
+<ul id="ul_parent_remove_elem">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+</ul>
+
+
+<br/>
+<br/>
+<br/>
+
+<h3>Вставка с краю. Вставка элементов в начало или в конец</h3>
+
+<ul id="ul_insert_from_edge">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<br/>
+<br/>
+
+<ul id="ul_parent_insert_before">
+    <li>text</li>
+    <li>text</li>
+    <li id="elem_insert_before">text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Смежная вставка. Смежная вставка элементов</h3>
+
+<div id="block_adjacent_insert" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+
+<br/>
+<br/>
+
+<div id="block_tags_adjacent_insert" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Клонирование элементов</h3>
+
+<div id="parent_block_clone">
+    <div class="elem_block_clone">
+        <p>первый абзац</p>
+        <p>второй абзац</p>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<input type="submit" id="submit_elem_clone" value="Клонирать поле">
+<br/>
+<br/>
+<div id="parent_block_input_clone">
+    <label>
+        <input type="text" name="elem_input_clone" class="elem_input_clone">
+    </label>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Проверка элементов</h3>
+<div id="block_check_matches" class="check_matches">!</div>
+
+<br/>
+<br/>
+
+<div id="parent_block_contains">
+    <p id="child_paragraph_contains">!!!</p>
+</div>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

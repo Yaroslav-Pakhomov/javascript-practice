@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- МЕТА-теги -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Фавиконка -->
+    <link rel="icon" href="./js.ico"/>
+
+    <!-- Заголовок вкладки -->
+    <title>Document</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- JS скрипты -->
+    <script src="./js/scripts.js"></script>
+
+</head>
+<body>
+
+<h1>JavaScript Progress Bar</h1>
+
+<h3>План на месяц, тыс. руб.</h3>
+<div id="myBarScale">
+    <div id="block_plan_min">
+        <div id="plan_min">
+            250
+        </div>
+        <span>(min)</span>
+        <div class="arrow-1">
+            <div></div>
+        </div>
+    </div>
+    <div id="block_plan_max">
+        <div id="plan_max">
+            350
+        </div>
+        <div class="arrow-1">
+            <div></div>
+        </div>
+    </div>
+</div>
+<div id="myProgress">
+    <div id="fact">50</div>
+    <!-- <div id="myBar">1</div> -->
+</div>
+
+<br>
+
+<h3>План на месяц, тыс. руб.</h3>
+
+<button id="button_click_progress_bar">Click Me</button>
+
+<br>
+<br>
+<br>
+
+<div id="myBarScaleGradient">
+    <div id="block_plan_min_gradient">
+        <div id="plan_min_gradient">
+            270
+        </div>
+        <div class="arrow-1">
+            <div></div>
+        </div>
+    </div>
+    <div id="block_plan_max_gradient">
+        <div id="plan_max_gradient">
+            500
+        </div>
+        <div class="arrow-1">
+            <div></div>
+        </div>
+    </div>
+</div>
+<div id="linear_gradient">
+    <div id="linear_gradient_value">100</div>
+    <div id="linear_gradient_progress"></div>
+</div>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>

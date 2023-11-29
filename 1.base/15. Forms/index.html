@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./js.ico">
+
+    <title>Document</title>
+
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<h1>Формы</h1>
+
+<label for="elem_textarea"></label>
+<textarea id="elem_textarea">Text</textarea>
+<p id="paragraph_textarea"></p>
+
+<br>
+<br>
+<br>
+
+<label for="elem_input_disabled"></label>
+<input id="elem_input_disabled" disabled>
+
+<br>
+<br>
+<br>
+
+<label for="elem_input_disabled_two_button"></label><input id="elem_input_disabled_two_button" disabled>
+<input id="submit_button_is_disabled" type="submit" value="Состояние инпута">
+<input id="submit_button_included" type="submit" value="Разблокировать">
+<input id="submit_button_disabled" type="submit" value="Заблокировать">
+<br>
+<p id="paragraph_is_disabled"></p>
+
+<br>
+<br>
+<br>
+
+<label for="elem_checkbox"></label><input type="checkbox" id="elem_checkbox">
+<input type="submit" id="elem_checkbox_on" value="Включить чекбокс">
+<input type="submit" id="elem_checkbox_off" value="Выключить чекбокс">
+
+<br>
+<br>
+
+<label for="checkbox_paragraph"></label><input type="checkbox" id="checkbox_paragraph" value="Приветствие">
+<input type="submit" id="submit_checkbox_paragraph" value="Вывести текст">
+<p id="paragraph_checkbox"></p>
+
+<br>
+<br>
+<br>
+
+<label for="input_alternation"></label><input id="input_alternation" disabled>
+<input id="button_alternation" type="submit" value="Разблокировать">
+
+<br>
+<br>
+
+<label for="checkbox_alternation"></label><input type="checkbox" id="checkbox_alternation">
+<input id="button_checkbox_alternation" type="submit" value="Сменить значение">
+
+<br>
+<br>
+<br>
+
+<h4>Работа с радио-кнопками</h4>
+<!-- Чтобы несколько радио-кнопок были группой, они должны иметь одинаковое значение атрибута name -->
+<!-- Чтобы отличить на JavaScript, какая именно кнопка была выбрана, каждой радио-кнопке в группе добавляют атрибуты value с различным значением -->
+<!-- У радиокнопки отмеченной по умолчанию, задан атрибут checked -->
+<input type="radio" id="elem_radio_1" name="elem_radio" value="1" checked> <label for="elem_radio_1">Значение 1</label>
+<input type="radio" id="elem_radio_2" name="elem_radio" value="2"> <label for="elem_radio_2">Значение 2</label>
+<input type="radio" id="elem_radio_3" name="elem_radio" value="3"> <label for="elem_radio_3">Значение 3</label>
+<input type="submit" id="button_radio" value="Значение радиокнопки">
+<p id="paragraph_radio"></p>
+
+<br>
+<br>
+<br>
+
+<h4>Событие change</h4>
+
+<label for="input_event_change"></label><input id="input_event_change" value="text">
+<p id="paragraph_event_change"></p>
+
+<br>
+<br>
+
+<input type="checkbox" id="checkbox_event_change">
+<label for="checkbox_event_change">Отправить смс</label>
+
+<br>
+<br>
+
+<label for="input_quantity_change"></label><input id="input_quantity_change" value="text">
+
+<br>
+<br>
+<br>
+
+<label for="input_event_input"></label><input id="input_event_input" value="text">
+<p id="paragraph_event_input"></p>
+
+<br>
+<br>
+<br>
+
+<label for="input_focus_blur"></label><input id="input_focus_blur" value="text">
+<input type="submit" id="button_focus_blur">
+
+<br>
+<br>
+
+<label for="text_focus_blur_1"></label><input class="text_focus_blur" id="text_focus_blur_1" value="">
+<label for="text_focus_blur_2"></label><input class="text_focus_blur" id="text_focus_blur_2" value="">
+
+<br>
+<br>
+<br>
+
+<label for="select_list"></label>
+<select id="select_list">
+    <option>one</option>
+    <option selected>two</option>
+    <option>three</option>
+</select>
+
+<br>
+<br>
+
+<label for="paragraph_select_list"></label>
+<select name="paragraph_select_list" id="paragraph_select_list">
+    <option>Значение 1</option>
+    <option>Значение 2</option>
+    <option selected>Значение 3</option>
+    <option>Значение 4</option>
+    <option>Значение 5</option>
+    <option>Значение 6</option>
+</select>
+<input type="submit" id="input_submit_select">
+<p id="select_paragraph"></p>
+
+<br>
+<br>
+
+<label for="years_select_list"></label><select name="years_select_list" id="years_select_list"
+                                               style="width: 100px;"></select>
+
+<br>
+<br>
+
+<label for="week_select_list"></label>
+<select name="week_select_list" id="week_select_list" style="width: 100px;">
+    <option value="1">Пн</option>
+    <option value="2">Вт</option>
+    <option value="3">Ср</option>
+    <option value="4">Чт</option>
+    <option value="5">Пт</option>
+    <option value="6">Сб</option>
+    <option value="7">Вс</option>
+</select>
+<p id="week_paragraph"></p>
+
+<br>
+<br>
+
+<h3>Изменение выбранного пункта списка</h3>
+<label for="select_list_change_item"></label>
+<select id="select_list_change_item">
+    <option value="one">один</option>
+    <option value="two" selected>два</option>
+    <option value="three">три</option>
+</select>
+<input type="submit" id="button_change_item">
+
+<br>
+<br>
+
+<label for="select_list_change_item_month"></label>
+<select name="select_list_change_item_month" id="select_list_change_item_month">
+    <option value="1">Январь</option>
+    <option value="2">Февраль</option>
+    <option value="3">Март</option>
+    <option value="4">Апрель</option>
+    <option value="5">Май</option>
+    <option value="6">Июнь</option>
+    <option value="7">Июль</option>
+    <option value="8">Август</option>
+    <option value="9">Сентябрь</option>
+    <option value="10">Октябрь</option>
+    <option value="11">Ноябрь</option>
+    <option value="12">Декабрь</option>
+</select>
+
+<br>
+<br>
+<br>
+
+<label for="input_change_index"></label><input type="text" id="input_change_index">
+<label for="index_select_list"></label><select name="index_select_list" id="index_select_list"
+                                               style="width: 100px;"></select>
+
+<br>
+<br>
+
+<label for="week_index_select_list"></label>
+<select name="week_index_select_list" id="week_index_select_list" style="width: 150px;">
+    <option value="1">Пн</option>
+    <option value="2">Вт</option>
+    <option value="3">Ср</option>
+    <option value="4">Чт</option>
+    <option value="5">Пт</option>
+    <option value="6">Сб</option>
+    <option value="7">Вс</option>
+</select>
+
+<br>
+<br>
+<br>
+
+<label for="week_day_select_list"></label>
+<select name="week_day_select_list" id="week_day_select_list" style="width: 100px;">
+    <option value="1">Пн</option>
+    <option value="2">Вт</option>
+    <option value="3">Ср</option>
+    <option value="4">Чт</option>
+    <option value="5">Пт</option>
+    <option value="6">Сб</option>
+    <option value="7">Вс</option>
+</select>
+<input type="submit" id="week_day_select_day" value="Выбрать Вс">
+<p id="week_day_paragraph_day"></p>
+
+<br>
+<br>
+<br>
+
+<label for="textarea_test"></label><textarea id="textarea_test"></textarea>
+<div id="div_test"></div>
+
+<br>
+<br>
+<br>
+
+<label for="checkbox_select_number"></label><input type="checkbox" id="checkbox_select_number">
+<div id="div_select_number"></div>
+<button id="button_select_number">button</button>
+
+<br>
+<br>
+<br>
+
+<label for="checkbox"></label><input id="checkbox" type="checkbox">
+<button id="button">button</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

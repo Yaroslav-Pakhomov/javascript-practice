@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- МЕТА-теги -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Фавикон -->
+    <link rel="icon" href="./js.ico"/>
+
+    <!-- Заголовок вкладки -->
+    <title>Document</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- JS скрипты -->
+    <script>
+        let str = 'script text index.html';
+    </script>
+    <script src="./js/scripts_test.js"></script>
+    <script src="./js/math.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script>
+
+        // let { square, cube, avg, digitsSum } = math_obj;
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            console.log(event);
+            console.log(str);
+            console.log('');
+
+            console.log(math_obj);
+            console.log(math_obj_avg);
+            console.log('');
+
+            // Библиотеки через замыкания. Сами функции хранятся в файле math.js
+            // Деструктуризация объекта в свойстве объекта window на переменные
+            let {square, cube, digitsSum} = window.math_obj;
+            let {avg1, avg2, avg3} = window.math_obj_avg;
+
+            console.log(square(4));
+            console.log(cube(4));
+            console.log(digitsSum(123));
+            console.log('');
+
+            console.log(avg1([3, 4, 5]));
+            console.log(avg2([3, 3, 6]));
+            console.log(avg3([3, 3, 6]));
+            console.log('');
+        });
+    </script>
+
+</head>
+<body>
+<h1>Модули через замыкания</h1>
+<br>
+
+<h3>Конфликты переменных</h3>
+
+
+<br>
+<br>
+<br>
+
+<h3>Модули через замыкания</h3>
+
+<div id="block_modules_via_closures1">10</div>
+<div id="block_modules_via_closures2">10</div>
+
+
+<br>
+<br>
+<br>
+
+<h3>Передача параметров в модуль через замыкания</h3>
+
+<div id="block_modules_via_closures_transfer_parameter">3</div>
+<button id="btn_modules_via_closures_transfer_parameter">click me</button>
+
+<br>
+<br>
+<br>
+
+<label for="input_modules_via_closures_transfer_parameter1">Число 1:</label>
+<input type="text" name="input_modules_via_closures_transfer_parameter1"
+       id="input_modules_via_closures_transfer_parameter1" class="input_modules_via_closures_transfer_parameter">
+<br>
+<label for="input_modules_via_closures_transfer_parameter2">Число 2:</label>
+<input type="text" name="input_modules_via_closures_transfer_parameter2"
+       id="input_modules_via_closures_transfer_parameter2" class="input_modules_via_closures_transfer_parameter">
+<br>
+<label for="input_modules_via_closures_transfer_parameter3">Число 3:</label>
+<input type="text" name="input_modules_via_closures_transfer_parameter3"
+       id="input_modules_via_closures_transfer_parameter3" class="input_modules_via_closures_transfer_parameter">
+<br>
+<br>
+<input type="submit" id="submit_modules_via_closures_transfer_parameter" value="Сумма чисел">
+
+<p id="paragraph_modules_via_closures_transfer_parameter">Результат суммы</p>
+
+
+<br>
+<br>
+<br>
+
+<h3>Передача родительского элемента в модуль через замыкания</h3>
+
+<div id="block_modules_via_closures_transfer_parent">
+    <div id="block_modules_via_closures_transfer_child1">1</div>
+    <div id="block_modules_via_closures_transfer_child2">2</div>
+    <div id="block_modules_via_closures_transfer_child3">3</div>
+
+    <br>
+    <div id="block_modules_via_closures_transfer_child_res"></div>
+
+    <br>
+    <button id="btn_modules_via_closures_transfer_child">click me</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Передача настроек модуля через замыкания</h3>
+
+<div id="block_modules_via_closures_transfer_parent_config"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

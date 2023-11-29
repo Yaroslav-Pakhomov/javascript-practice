@@ -1,0 +1,41 @@
+table {
+    border-spacing: 0; /* промежуток между ячейками таблицы отсутствует */
+    border-collapse: collapse; /* объединяем границы ячеек в одну */
+}
+
+th, td {
+    width: 75px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.tr-color {
+    color: #0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-active {
+    background: #f00;
+}
+
+
+.bg-color1 {
+    background: #00f;
+}
+
+.bg-color2 {
+    background: #0f0;
+}
+
+.bg-color3 {
+    background: #f00;
+}

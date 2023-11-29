@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="./js.ico"/>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<h1>Практика</h1>
+
+<br/>
+
+<h3>Создание элементов из массива</h3>
+
+<div id="parent_arr_create_elem"></div>
+
+<br/>
+
+<h3>Практика на создание списков ul</h3>
+
+<ul id="create_ul_list"></ul>
+
+<br/>
+
+<h3>Создание таблиц. Создание HTML таблиц</h3>
+<br/>
+<label for="input_create_html_table_rows">Кол-во строк:</label>
+<input type="text" name="input_create_html_table_rows" id="input_create_html_table_rows">
+<br/>
+<br/>
+<label for="input_create_html_table_cols">Кол-во столбцов:</label>
+<input type="text" name="input_create_html_table_cols" id="input_create_html_table_cols">
+<br/>
+<br/>
+<input type="submit" id="input_create_html_table_submit" value="Создать таблицу">
+<input type="submit" id="input_delete_html_table_submit" value="Удалить таблицу">
+
+<br/>
+<br/>
+
+<div id="block_create_html_table"></div>
+
+<br/>
+<br/>
+
+<h3>Последовательное заполнение HTML таблиц</h3>
+
+<div id="block_serial_fill_html_table"></div>
+
+<br/>
+<br/>
+
+<h3>Создание HTML таблицы из массива</h3>
+
+<div id="block_create_html_table_by_arr"></div>
+
+<br/>
+<br/>
+
+<h3>Добавление рядов и колонок</h3>
+
+<div id="block_add_rows_cols_html_table">
+    <br/>
+    <input type="submit" id="submit_add_rows_html_table" value="Добавить строку">
+
+    <input type="submit" id="submit_add_cols_html_table" value="Добавить столбец">
+    <br/>
+    <br/>
+    <input type="submit" id="submit_add_rows_cols_html_table" value="Добавить строку и столбец">
+    <br/>
+    <br/>
+
+</div>
+
+<br/>
+<br/>
+
+<h3>Изменение ячеек HTML таблицы</h3>
+
+<div id="block_change_cells_html_table">
+
+    <input type="submit" id="submit_increase_cells_twice_html_table" value="Увеличить значение ячейки в 2 раза">
+    <br/>
+    <br/>
+
+</div>
+
+<br/>
+<br/>
+
+<h3>Удаление новых элементов. Самоудаление новых элементов</h3>
+
+<div id="block_parent_self_removal_new_elem"></div>
+
+<br/>
+
+<input type="submit" id="button_self_removal_new_elem" value="Добавить элемент">
+
+<ul id="ul_parent_self_removal_new_elem">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+
+<br/>
+<br/>
+
+<h3>Ссылка на удаление элемента</h3>
+
+<div id="block_parent_link_for_remove_elem">
+    <p id="paragraph_for_remove">Параграф</p>
+    <a href="" id="link_remove_paragraph">Удалить параграф</a>
+</div>
+
+<br/>
+<br/>
+
+<h3>Создание ссылок для удаления элементов</h3>
+
+<div id="block_parent_create_link_for_remove_elem">
+    <p id="paragraph_create_link_for_remove1" class="paragraph_create_link_for_remove">Параграф 1 </p>
+    <p id="paragraph_create_link_for_remove2" class="paragraph_create_link_for_remove">Параграф 2 </p>
+    <p id="paragraph_create_link_for_remove3" class="paragraph_create_link_for_remove">Параграф 3 </p>
+    <p id="paragraph_create_link_for_remove4" class="paragraph_create_link_for_remove">Параграф 4 </p>
+</div>
+
+<br/>
+
+<ul id="ul_parent_create_link_for_remove_elem">
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+    <li>Пункт 4</li>
+    <li>Пункт 5</li>
+    <li>Пункт 6</li>
+</ul>
+
+<br/>
+
+<table id="table_parent_create_link_for_remove_elem">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+<h3>Редактирование отдельного элемента</h3>
+
+<div id="block_parent_edit_single_elem">
+    <p>text</p>
+    <!-- <input type="text"> -->
+</div>
+
+<br/>
+<br/>
+
+<h3>Прячем текст при редактировании элемента</h3>
+
+<div id="block_parent_hide_edit_single_elem">
+    <p>Скрытие</p>
+    <!-- <input type="text"> -->
+
+</div>
+
+
+<br/>
+<br/>
+
+<h3>Редактирование в группе элементов</h3>
+
+<div id="block_elements_group_edit">
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+</div>
+
+<br/>
+
+<ul id="ul_elements_group_edit">
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+    <li>Пункт 4</li>
+    <li>Пункт 5</li>
+    <li>Пункт 6</li>
+</ul>
+
+<br/>
+
+<table id="table_elements_group_edit">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Удаление и редактирование. Одновременное редактирование и удаление элементов</h3>
+
+<div id="block_edit_delete_elems_simultaneous">
+    <p><span>text1</span> <a href="">remove</a></p>
+    <p><span>text2</span> <a href="">remove</a></p>
+    <p><span>text3</span> <a href="">remove</a></p>
+</div>
+
+
+<br/>
+<br/>
+<br/>
+
+<h3>Стилизация элементов</h3>
+
+<div id="block_stylization_elems">
+    <p><span>text1</span> <a href="">link</a></p>
+    <p><span>text2</span> <a href="">link</a></p>
+    <p><span>text3</span> <a href="">link</a></p>
+</div>
+
+
+<br/>
+
+<table id="table_stylization_elems">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Кнопки для скрытия и показа элемента</h3>
+
+<input type="submit" id="submit_show_elem" value="Показать элемент">
+<input type="submit" id="submit_hide_elem" value="Скрыть элемент">
+<input type="submit" id="submit_show_hide_elem" value="Показать/Скрыть элемент">
+<p id="show_hide_elem">Элемент</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Много элементов с кнопками показа</h3>
+
+<br/>
+<button data-elem="paragraph_show_hide1"
+        class="button_show_hide_elem button_show_hide_elem_second button_show_hide_elem_third">Показать/Скрыть элемент
+</button>
+<br/>
+<p id="paragraph_show_hide1" class="paragraph_show_hide_second">Параграф 1</p>
+
+<br/>
+<button data-elem="paragraph_show_hide2"
+        class="button_show_hide_elem button_show_hide_elem_second button_show_hide_elem_third">Показать/Скрыть элемент
+</button>
+<br/>
+<p id="paragraph_show_hide2" class="paragraph_show_hide_second">Параграф 2</p>
+
+<br/>
+<button data-elem="paragraph_show_hide3"
+        class="button_show_hide_elem button_show_hide_elem_second button_show_hide_elem_third">Показать/Скрыть элемент
+</button>
+<br/>
+<p id="paragraph_show_hide3" class="paragraph_show_hide_second">Параграф 3</p>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Активация элементов</h3>
+
+<table id="table_activation_elems">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+<ul id="ul_activation_elems">
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+    <li>Пункт 4</li>
+    <li>Пункт 5</li>
+    <li>Пункт 6</li>
+</ul>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Чередование стилей активации</h3>
+
+<table id="table_activation_alternation_elems">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+<p>Чередование многих цветов из массива</p>
+<table id="table_many_activation_elems">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+<br/>
+
+<h3>Практика на изменение элементов</h3>
+
+<ul id="ul_workers_elems"></ul>
+<label for="add_workers_elems"></label>
+<input type="text" name="add_workers_elems" id="add_workers_elems" placeholder="Добавить работника">
+
+<br/>
+<br/>
+<br/>
+
+<h3>Массив объектов и таблица</h3>
+
+<table id="table_workers_elems"></table>
+
+<br>
+<br>
+
+<label for="add_workers_in_table_name"></label>
+<input type="text" name="add_workers_in_table_name" id="add_workers_in_table_name" placeholder="Введите имя">
+
+<label for="add_workers_in_table_age"></label>
+<input type="text" name="add_workers_in_table_age" id="add_workers_in_table_age" placeholder="Введите возраст">
+
+<label for="add_workers_in_table_salary"></label>
+<input type="text" name="add_workers_in_table_salary" id="add_workers_in_table_salary" placeholder="Введите зарплату">
+
+<br>
+<br>
+
+<input type="submit" name="add_workers_in_table" id="add_workers_in_table" value="Добавить работника в таблицу">
+
+<br/>
+<br/>
+<br/>
+
+<h3>Массив объектов и список</h3>
+
+<ul id="ul_workers_objs"></ul>
+
+<br>
+<br>
+
+<label for="add_workers_obj_name"></label>
+<input type="text" name="add_workers_obj_name" id="add_workers_obj_name" placeholder="Введите имя">
+
+<label for="add_workers_obj_age"></label>
+<input type="text" name="add_workers_obj_age" id="add_workers_obj_age" placeholder="Введите возраст">
+
+<label for="add_workers_obj_salary"></label>
+<input type="text" name="add_workers_obj_salary" id="add_workers_obj_salary" placeholder="Введите зарплату">
+
+<br>
+<br>
+
+<label for="add_workers_obj"></label>
+<input type="submit" name="add_workers_obj" id="add_workers_obj" placeholder="Добавить работника">
+
+<br/>
+<br/>
+</body>
+</html>

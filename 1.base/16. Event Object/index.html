@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./js.ico">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<h1>Объект Event</h1>
+
+<button id="elem_base_work">
+    Кликни
+    <div srcdoc="
+            <!DOCTYPE html>
+                <head>
+                    <base target=&quot;_blank&quot;>
+                    <meta charset=&quot;utf-8&quot;>
+                    <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
+                </head>
+                <body>
+
+                    <div id=&quot;elem&quot;>0 : 0</div>
+
+                    <script>
+
+                        let elem = document.getElementById('elem');
+
+                        document.addEventListener('mousemove', function(event) {
+                            elem.innerHTML = event.clientX + ' : ' + event.clientY;
+                            elem.innerHTML += '<br><br>';
+                            elem.innerHTML += event.pageX + ' : ' + event.pageY;
+                        });
+                    </script>
+                </body>
+            </html>">
+    </div>
+</button>
+
+<h3>Координаты события</h3>
+<p id="event_cursor_coordinate"></p>
+
+<br>
+<br>
+<br>
+
+<h3>Тип события</h3>
+<button id="elem_event_type" class="">Тип</button>
+
+<br>
+<br>
+<br>
+
+<h3>Элемент события</h3>
+<div id="event_elem">
+    <p>text</p>
+</div>
+<br>
+<ul id="event_elem_ul">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+
+<br>
+<br>
+<br>
+
+<h3>Получение нажатых клавиш</h3>
+<label for="get_pressed_keys"></label><input type="text" id="get_pressed_keys">
+<p id="paragraph_get_pressed_keys"></p>
+
+<br>
+<br>
+<br>
+
+<h3>Отслеживание клавиш-модификаторов</h3>
+<button id="tracking_modifier_keys">Отслеживание</button>
+
+<br>
+<br>
+
+<a href="#" id="href_tracking_modifier_keys">Отслеживание</a>
+
+<br>
+<br>
+
+<ul id="ul_tracking_modifier_keys">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<br>
+<br>
+<br>
+
+<h3>Отмена действия по умолчанию</h3>
+<a href="/href" id="elem_cancel_default">ссылка</a>
+
+<br>
+<br>
+<br>
+
+<label for="input_cancel_default_1">Число 1</label>
+<input type="number" name="input_cancel_default_1" id="input_cancel_default_1">
+<br>
+<br>
+<label for="input_cancel_default_2">Число 2</label>
+<input type="number" name="input_cancel_default_2" id="input_cancel_default_2">
+<br>
+<br>
+<a href="/href" id="link_cancel_default">Посчитать сумму</a>
+<p id="paragraph_cancel_default">Параграф</p>
+
+<br>
+<br>
+<br>
+
+<h3>Всплытие событий</h3>
+<div id="events_emergence_elem1">
+    <div id="events_emergence_elem2">
+        <div id="events_emergence_elem3"></div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Получение целевого элемента при всплытии событий</h3>
+<!-- ascent target element  -->
+<div id="ascent_target_element_block">
+    <p id="ascent_target_element_paragraph"></p>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div id="ascent_target_element_div">
+    <ul id="ascent_target_element_ul">
+        <li class="ascent_target_element_li" data-value="1">Текст 1</li>
+        <li class="ascent_target_element_li" data-value="2">Текст 2</li>
+        <li class="ascent_target_element_li" data-value="3">Текст 3</li>
+    </ul>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Прекращение всплытия событий</h3>
+<div id="events_emergence_stop_elem1">
+    <div id="events_emergence_stop_elem2">
+        <div id="events_emergence_stop_elem3"></div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="parent">
+    <button>click me (показать блок)</button>
+    <div id="block">
+        text
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Погружение событий</h3>
+<div id="events_immersion_elem1">
+    <div id="events_immersion_elem2">
+        <div id="events_immersion_elem3"></div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Навешивание обработчиков на новые элементы</h3>
+<ul id="ul_new_elem_hanging_handler">
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ul>
+
+<button id="button_new_elem_hanging_handler">add</button>
+
+<br>
+<br>
+<br>
+
+<h3>Делегирование событий</h3>
+<ul id="ul_delegating_events">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+</ul>
+
+<br>
+
+<ul id="ul_universal_delegating_events">
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+</ul>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
