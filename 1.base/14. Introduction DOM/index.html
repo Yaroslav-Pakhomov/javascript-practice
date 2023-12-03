@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./js.ico">
+
+    <title>Document</title>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!--  Javascript  -->
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<h1>Введение в DOM</h1>
+
+<!-- Получение DOM элемента-->
+<!-- Привязывание обработчиков к элементам-->
+<!-- Именованные обработчики событий-->
+<!-- Несколько обработчиков одного события-->
+<!-- Обработчики разных событий-->
+<input id="button" type="submit">
+
+<br>
+<br>
+
+<!--Сложные селекторы DOM элемента-->
+<div id="parent">
+    <label>
+        <input class="elem" value="1">
+        <input class="elem" value="2">
+    </label>
+</div>
+
+<br>
+<br>
+
+<!-- Один обработчик ко многим элементам-->
+<input id="button1" type="submit" value="button1">
+<input id="button2" type="submit" value="button2">
+
+<br>
+<br>
+
+<!-- Работа с текстом элементов-->
+<p id="p_elem">text</p>
+
+
+<!-- Работа с HTML кодом элементов-->
+<p id="p_html_elem" class="class_html_elem"><b>text</b></p>
+
+
+<!-- Атрибуты тегов как свойства-->
+<label for="input_elem"></label><input id="input_elem" type="text">
+
+<br>
+<br>
+
+
+<!-- Работа с текстовыми полями-->
+<!-- Фокус текстовых полей-->
+<!-- Цепочки методов и свойств-->
+<!-- Объект this-->
+<label for="text_elem"></label><input id="text_elem" value="text">
+
+<br>
+<br>
+
+<!-- Исключения при работе с атрибутами-->
+<label for="class_elem"></label><input id="class_elem" class="aaa bbb">
+
+<br>
+<br>
+
+<!-- Объект this-->
+<label for="this_text_elem"></label><input id="this_text_elem" value="text">
+
+<br>
+<br>
+
+<!--Преимущество this-->
+<input id="this_button1" type="submit" value="text1">
+<input id="this_button2" type="submit" value="text2">
+<input id="this_button3" type="submit" value="text3">
+
+<br>
+<br>
+
+<!-- Получение группы элементов-->
+<!-- Добавление обработчиков в цикле-->
+<!-- Анонимные обработчики в цикле-->
+<p class="www">text1</p>
+<p class="www">text2</p>
+<p class="www">text3</p>
+
+<br>
+<br>
+
+<!--Отвязывание событий-->
+<input id="remove_event_button" type="submit" value="Отправить">
+
+
+<!-- Отвязывание обработчиков событий в цикле-->
+<!-- Отвязывание анонимных функций-->
+<p class="remove_event_cycle">text1</p>
+<p class="remove_event_cycle">text2</p>
+<p class="remove_event_cycle">text3</p>
+
+
+</body>
+
+</html>
